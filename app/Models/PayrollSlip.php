@@ -23,6 +23,7 @@ class PayrollSlip extends Model
         'potongan_absensi',
         'total_gaji',
         'status',
+        'soap_receipt_number',
     ];
 
     protected $casts = [
@@ -36,5 +37,6 @@ class PayrollSlip extends Model
         'jumlah_alpha' => 'integer',
         'potongan_absensi' => 'float',
         'total_gaji' => 'float',
+        'soap_receipt_number' => 'string',
     ];
 }

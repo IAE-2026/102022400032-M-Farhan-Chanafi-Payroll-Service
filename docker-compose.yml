@@ -10,6 +10,9 @@ services:
       - "8003:8000"
     volumes:
       - .:/app
+    # dns:
+    #   - 8.8.8.8
+    #   - 1.1.1.1
     environment:
       - DB_CONNECTION=sqlite
       - DB_DATABASE=/app/database/database.sqlite
